@@ -1,4 +1,4 @@
-# SQL Server Vector Search Demo
+# SQL Server 2025 Demos
 
 This repository demonstrates vector search capabilities in SQL Server, featuring two key scripts:
 
@@ -12,22 +12,6 @@ This repository demonstrates vector search capabilities in SQL Server, featuring
 - S3-compatible external storage integration for tiered data management
 - Transparent access to embeddings across multiple storage tiers
 - Performance comparison between exact and approximate nearest neighbor algorithms
-
-## Prerequisites
-
-- SQL Server 2022 with vector capabilities
-- S3-compatible object storage
-- Trace flags 466, 474, and 13981
-
-## Usage
-
-1. Create a database named `StackOverflow_Embeddings`
-2. Run vector-index.sql to set up vector functionality
-3. Run managing-embeddings.sql to implement tiered storage
-
-## Performance
-
-Approximate nearest neighbors search (16ms) demonstrates a 55x performance improvement over exact search (886ms) when using vector indexes.
 
 ## Notes
 
